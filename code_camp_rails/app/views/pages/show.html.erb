@@ -21,9 +21,4 @@
 </ul>
 <% end %>
 
-<%= form_for [@puppy, @puppy.suggestions.build] do |f| %>
-	<p>Suggestion: <%= f.text_field :name, required: true%> </p>
-	<p> <%= f.submit %> </p>
-
-<% end %>
 
