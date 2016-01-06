@@ -1,7 +1,7 @@
 # CodeCamp
 Square Code Camp Hackathon Project
 
-Kelsey: 
+Kelsey: carousel slider for profiles.html
 
 Kathryn: profiles.html design and implementation
 
