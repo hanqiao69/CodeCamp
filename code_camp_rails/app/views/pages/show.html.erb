@@ -1,0 +1,30 @@
+<h1><%= @profile.name %></h1>
+
+<ul>
+	<li> Location: <%= @profile.location %> </li>
+	<li> Email: <%= @profile.email %> </li>
+	<li> Twitter Name: <%= @profile.twitter%>
+
+	<% if @profile.college? %>
+		<li> College: <%= profile.college %> </li>
+	<% end %>
+
+	<% if @profile.company? %>
+		<li> Company: <%= profile.company %> </li>
+	<% end %>
+
+	<% if @profile.bio? %>
+		<li> Bio: <%= profile.bio? %> </li>
+	<% end %>
+</ul>
+<% end %>
+
+<%= form_for [@puppy, @puppy.suggestions.build] do |f| %>
+	<p>Suggestion: <%= f.text_field :name, required: true%> </p>
+	<p> <%= f.submit %> </p>
+
+<% end %>
+
+<p> <%= link_to "Edit", edit_puppy_url(@puppy) %> </p>
+
+<p> <%= link_to "Back to Puppies", puppies_url() %> </p>
