@@ -15,6 +15,7 @@ Camille:
 
 
 TO DO:
+
 1. Login Page (through G+)
 2. Singular Profile (model + database)
 3. All of the Profiles together
