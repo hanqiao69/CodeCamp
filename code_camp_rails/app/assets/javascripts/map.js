@@ -38,4 +38,3 @@ function initialize() {
     '&callback=initialize';
   document.body.appendChild(script);
 }
-Status API Training Shop Blog About Pricing

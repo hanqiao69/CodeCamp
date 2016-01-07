@@ -1,22 +1,22 @@
-<h1><%= @profile.name %></h1>
+<h1><%= @user.name %></h1>
 
 <img src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
 
 <ul>
-	<li> Location: <%= @profile.location %> </li>
-	<li> Email: <%= @profile.email %> </li>
-	<li> Twitter Name: <%= @profile.twitter%>
+	<li> Location: <%= @user.location %> </li>
+	<li> Email: <%= @user.email %> </li>
+	<li> Twitter Name: <%= @user.twitter%>
 
 	<% if @profile.college? %>
-		<li> College: <%= profile.college %> </li>
+		<li> College: <%= user.college %> </li>
 	<% end %>
 
 	<% if @profile.company? %>
-		<li> Company: <%= profile.company %> </li>
+		<li> Company: <%= user.company %> </li>
 	<% end %>
 
 	<% if @profile.bio? %>
-		<li> Bio: <%= profile.bio %> </li>
+		<li> Bio: <%= user.bio %> </li>
 	<% end %>
 </ul>
 <% end %>

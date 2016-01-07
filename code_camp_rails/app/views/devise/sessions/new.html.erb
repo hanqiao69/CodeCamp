@@ -1,4 +1,7 @@
-<h2>Log in</h2>
+
+<div id = "background-container">
+
+<div id = "container" style="width:400px; margin:0 auto; padding-top:10%;">
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
@@ -18,11 +21,20 @@
     </div>
   <% end -%>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
+  <div class="actions" style="padding: 25px 0; width: 100%;">
+    <%= f.submit "Log in", class: "waves-effect waves-light btn", style: "width: 100%" %> 
   </div>
 <% end %>
 
+<<<<<<< HEAD
 <%= link_to "Sign in with Google", user_omniauth_authorize_path(:google_oauth2) %>
 
 <%= render "devise/shared/links" %>
+=======
+
+<%= render "devise/shared/links"%>
+
+</div>
+</div>
+
+>>>>>>> e1fe94052b7dce04e65b421320f39e4eb7912722
