@@ -46,41 +46,24 @@ function initialize() {
 function getLocation(location) {
 	var pin
 	switch (location) {
-		case 'philadelphia': pin = new google.maps.LatLng(39.9525839, -75.1652215); break;
-		case 'new york': pin = new google.maps.LatLng(40.712784, -74.005941); break;
-		/*
-    case 'san francisco':
-		case 'ames': 
-		case 'claremont':
-		case 'south hadley':
-		case 'atlanta': 
+		case 'philadelphia': pin = new google.maps.LatLng(39.9525839, -75.1652215); break; //Rachel Han, Andrea Baric
+		case 'new york': pin = new google.maps.LatLng(40.712784, -74.005941); break; // Kathryn Hodge, Kaitlin Gu, Briana Vecchione
+    /*
+    case 'providence' // Victoria Chavez
+    case 'daytona beach': // Caeley Looney
+    case 'melbourne': // Camille Ramseur
+    case 'cambridge': // JN Fang
+    case 'san francisco': // Janet Chavez, Shailee Wilson
+    case 'detroit': // Jeseekia Vaughn
+    case 'wellesley': // Ashley Thomas
+    case 'jacksonville': // Allison Lakay Bryan
+		case 'ames': // Kelsey Hrubes
+		case 'claremont': // Rosario Huamani Carpio
+		case 'south hadley': // Hashma Shahid
+		case 'atlanta': // Vy Thuy Nguyen
+    case 'los angeles': // Kayla Kasprak
+    case 'austin': // Megan Chen
     */
 	} 
 	return pin;
 }
-
-/*
-function geocodeAddress(geocoder, map) {
-	var marker;
-  geocoder.geocode('philadelphia', function(results, status) {
-    if (status === google.maps.GeocoderStatus.OK) {
-      resultsMap.setCenter(results[0].geometry.location);
-      marker = new google.maps.Marker({
-        map: resultsMap,
-        position: results[0].geometry.location
-      });
-    } else {
-      alert('Geocode was not successful for the following reason: ' + status);
-    }
-  });
-  return marker;
-}
-
-
-function getGeo(address) {
-	geocoder = new google.maps.Geocoder();
-	var loc = geocoder.location;
-	var pin = google.maps.LatLng(loc);
-	return loc
-}
-*/
