@@ -1,7 +1,30 @@
- #map {
-        width: 1000px;
-        height: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: #CCC;
-      }
+* {
+  margin: 0 0 0 0 !important; }
+
+html, body, .container, .row {
+  height: 100%;
+  width: 100%;
+  margin: 0 0 0 0; }
+
+.container, .col {
+  padding: 0 0 0 0 !important; }
+
+.card-panel {
+  border-radius: 0px !important; }
+
+.fa {
+  color: white;
+  display: block; }
+
+.col.s12 {
+  height: 33.3%; }
+  .col.s12 .side-nav-item {
+    font-size: 200%;
+    height: 100%;
+    text-align: center; }
+
+#main {
+  height: 100%;
+  background-color: gray; }
+
+/*# sourceMappingURL=style.css.map */
