@@ -8,16 +8,27 @@
 		margin: 5% 0 5% 0;
 	}
 
+	#searchByName {
+		text-align: left;
+		background: #33cccc;
+		height: auto;
+		width: 200px;
+		margin-left: 50px;
+		margin-bottom: 30px;
+	}
+
 	h3 {
 		text-align: center;
 	}
 
+	/*
 	.row {
 		position: relative;
   		top: 50%;
-  		transform: translateY(-50%); /* used for vertical aligning */
+  		transform: translateY(-50%); /* used for vertical aligning *
   		color: white;
   		margin: 0 0 0 0;
 	}
+	*/
 	
 }
