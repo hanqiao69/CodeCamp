@@ -1,14 +1,16 @@
 
-<div id = "background">
-<h1> Welcome to Code Camp Generations! </h1>
-</div>
+<div id = "login-container">
 
+	<div id = "background">
+		<h1> Welcome to Code Camp Generations! </h1>
 
-<div id = "container" style="width:400px; margin:0 auto; padding-top:10%;">
+		<div id = "container" style="width:400px; margin:0 auto; padding-top:10%;">
 
-<%= link_to "Sign in with Google", user_omniauth_authorize_path(:google_oauth2), class: "waves-effect waves-light btn", style: "width: 100%" %>
+			<%= link_to "Sign in with Google", user_omniauth_authorize_path(:google_oauth2), class: "waves-effect waves-light btn", style: "width: 100%" %>
 
+		</div>
 
+	</div>
 
 </div>
 

@@ -1,12 +1,18 @@
 #login-container {
-	#background body {
+	height: inherit;
+	width: 100%;
+
+	#background {
 		background-image: image-url("tempBackground1.jpg");
 		background-size: 100%;
+		height: inherit;
+    	background-repeat: no-repeat;
+    	background-size: cover
 	}
 
 	h1 {
 		text-align: center;
-		padding-bottom: 100px;
+		padding-bottom: 120px;
 		font-weight: thin;
 	}
 

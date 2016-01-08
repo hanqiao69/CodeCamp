@@ -1,0 +1,11 @@
+
+
+<%= form_for @resource do |f| %>
+	<p> Title : <%= f.text_field :title%></p>
+
+	<p> Link : <%= f.text_field :link %></p>
+	<p> Category : <%= f.text_field :category %></p>
+	<p> Description : <%= f.text_area :description %></p>
+	<p> <%= f.submit %></p>
+<% end %>
+
