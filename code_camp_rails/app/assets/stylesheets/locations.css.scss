@@ -1,11 +1,23 @@
-#map {
-	height: 400px; 
-	width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 300px;
-}
-
-h3 {
+#locations-wrapper{
 	text-align: center;
+	height: 100%;
+
+	#map {
+		height: auto; 
+		width: 100%;
+		margin: 5% 0 5% 0;
+	}
+
+	h3 {
+		text-align: center;
+	}
+
+	.row {
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%); /* used for vertical aligning */
+  		color: white;
+  		margin: 0 0 0 0;
+	}
+	
 }
