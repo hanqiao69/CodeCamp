@@ -1,2 +1,18 @@
-<h1>Pages#resources</h1>
-<p>Find me in app/views/pages/resources.html.erb</p>
+<h1> Resources </h1>
+
+<ul>
+	<% @resources.each do |resource| %>
+		<li>
+			  <%= resource.title %>
+			
+			<br>
+		</li>
+
+
+	<% end %>
+	<br>
+
+
+</ul>
+
+<%= render partial: 'form' %>
