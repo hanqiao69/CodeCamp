@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  
   def profiles
   end
 
@@ -6,41 +7,43 @@ class PagesController < ApplicationController
   end
 
   def resources 
-  	@resource = Resource.new
-  	@resources = Resource.all
+    @resource = Resource.new
+    @resources = Resource.all
 
   end
 
   def new 
-  	@resource= Resource.new
-  	respond_with @resource
+    @resource= Resource.new
+    respond_with @resource
 
   end
 
   def create 
-  	@resource = Resource.create(res_params)
-  	respond_with @resources
-  	
+    @resource = Resource.create(res_params)
+    respond_with @resources
+    
   end
 
   def edit
-  	respond_with @resource
+    respond_with @resource
 
   end
 
   def update
-  	@resource.update(res_params)
-  	respond_with @resource
+    @resource.update(res_params)
+    respond_with @resource
   end
 
   def destroy
-  	@resource.destroy
-  	respond_with @resource
+    @resource.destroy
+    respond_with @resource
 
   end
 
   def res_params
-  	params.require(:resource).permit(:user, :link, :description, :title, :category)
+    params.require(:resource).permit(:user, :link, :description, :title, :category)
 
   end
+
+
 end

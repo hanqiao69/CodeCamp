@@ -1,0 +1,32 @@
+.resources {
+
+	background-color: #ff6666	;
+	height: inherit;
+}
+
+.resources h1 {
+
+	color: white;
+	text-align: center;
+
+
+}
+
+.resources h2 {
+
+
+	font-size: 24px;
+	margin-left: 20px;
+}
+
+
+.resources ul {
+
+	margin-left: 40px;
+	color: white;
+}
+
+.resources ul li a {
+	color:white;
+
+}
