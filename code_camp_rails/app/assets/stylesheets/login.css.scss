@@ -1,48 +1,51 @@
-body {
-	background-image: image-url("tempBackground1.jpg");
-	background-size: 100%;
-}
+#login-container {
+	#background body {
+		background-image: image-url("tempBackground1.jpg");
+		background-size: 100%;
+	}
 
-h1 {
-	text-align: center;
-	padding-bottom: 100px;
-	font-weight: thin;
-}
+	h1 {
+		text-align: center;
+		padding-bottom: 100px;
+		font-weight: thin;
+	}
 
-#background-container{
-	margin-top: 130px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 600px;
-	background-color: rgba(231, 55, 60, 0.80);
-	padding-bottom: 20px;
-}
+	#background-container{
+		margin-top: 130px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 600px;
+		background-color: rgba(231, 55, 60, 0.80);
+		padding-bottom: 20px;
+	}
 
-#container {
-	width:400px;
-	margin: 0 auto;
-	padding-top:10%;
-}
+	#container {
+		width:400px;
+		margin: 0 auto;
+		padding-top:10%;
+	}
 
-#container label {
-	color: white;	
-}
+	#container label {
+		color: white;	
+	}
 
-#container input:not([type="submit"]){
-	border-bottom-color: white;
-	color: white;
-}
+	#container input:not([type="submit"]){
+		border-bottom-color: white;
+		color: white;
+	}
 
-#container .btn {
-	background-color: white;
-	color: grey;
-}
+	#container .btn {
+		background-color: white;
+		color: grey;
+	}
 
-#container [type="checkbox"]:checked+label::before {
-	border-right-color: white;
-	border-bottom-color:white;
-}
+	#container [type="checkbox"]:checked+label::before {
+		border-right-color: white;
+		border-bottom-color:white;
+	}
 
-#container [type="checkbox"]:not(:checked)+label::before {
-	border-color: white;
+	#container [type="checkbox"]:not(:checked)+label::before {
+		border-color: white;
+	}
+
 }
