@@ -1,11 +1,13 @@
+var map;
+
 function initialize() {
         var mapCanvas = document.getElementById('map');
         var mapOptions = {
-          center: new google.maps.LatLng(39, -95),
+          center: new google.maps.LatLng(36.5, -96),
           zoom: 5,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
-        var map = new google.maps.Map(mapCanvas, mapOptions);
+        map = new google.maps.Map(mapCanvas, mapOptions);
         var philadelphia = ['Rachel Han', 'Andrea Baric'];
         var new_york = ['Kathryn Hodge', 'Kaitlin Gu', 'Briana Vecchione'];
         var providence = ['Victoria Chavez'];
@@ -94,8 +96,21 @@ function makeMarker(id, location, names, map) {
   });
 }
 
-function lookUpByName(name, map) {
-  switch (name) {
-    case 'Rachel Han': map.setCenter(getLocation('philadelphia'));
+function lookUpByName() {
+  var camper = document.getElementById("camper").value;
+  console.log(camper);
+  switch (camper) {
+    case 'Rachel': map.setCenter(new google.maps.LatLng(39.9525839, -75.1652215));
+    case 'Jeseekia': map.setCenter(new google.maps.LatLng(42.331427, -83.045754));
   }
 }
+/*
+var camper = document.getElementById("camper").value;
+
+$("#search_button").click(function(){
+  var camper = document.getElementById("camper").value;
+  switch (name) {
+    case 'Rachel': map.setCenter(getLocation('philadelphia'));
+  }
+});
+*/
