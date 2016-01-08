@@ -12,8 +12,11 @@ class User < ActiveRecord::Base
       user.uid = auth.uid
       user.name = auth.info.name
       user.oauth_token = auth.credentials.token
-      user.oauth_expires_at = Time.at(auth.credentials.expires_at)
+      user.email = auth.info.email
+      #user.oauth_expires_at = Time.at(auth.credentials.expires_at)
+      user.password = Devise.friendly_token[0,20]
       user.save!
+      
     end
   end
 
