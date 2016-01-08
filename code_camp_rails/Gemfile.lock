@@ -190,10 +190,10 @@ DEPENDENCIES
   doorkeeper
   jbuilder (~> 2.0)
   jquery-rails
+  materialize-sass
   omniauth
   omniauth-google-oauth2
   omniauth-oauth2 (~> 1.3.1)
-  materialize-sass
   rails (= 4.2.5)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
