@@ -1,9 +1,13 @@
 
-<div id = "background-container">
+<!-- <div id = "background-container"> --!>
+
+<h1 style= "padding-bottom:10%"> Welcome to Code Camp Generations! </h1>
+
+<!--  </div> --!>
 
 <div id = "container" style="width:400px; margin:0 auto; padding-top:10%;">
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<!-- <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
@@ -26,11 +30,15 @@
   </div>
 <% end %>
 
-<%= link_to "Sign in with Google", user_omniauth_authorize_path(:google_oauth2) %>
+--!>
 
+<%= link_to "Sign in with Google", user_omniauth_authorize_path(:google_oauth2), class: "waves-effect waves-light btn", style: "width: 100%" %>
+
+<!--
 <%= render "devise/shared/links" %>
+--!>
 
 
-</div>
+
 </div>
 
